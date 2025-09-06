@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sueldo del Trabajador</title>
+</head>
+<body>
+<h2>Sueldo a Cobrar</h2>
+<form method="post" action="ejercicio02.jsp">
+    <label>Estado civil</label>
+    <select name="estado" required>
+        <option value="disabled selected"> Selecione</option>
+        <option value="casado">Casado</option>
+        <option value="viudo">Viudo</option>
+        <option value="soltero">Soltero</option>
+    </select>
+    <br><br>
+    <label>Numero de hijos:</label>
+    <input type="number" name="hijos" min="0" required>
+    <br><br>
+    <label>Sueldo basico</label>
+    <input type="number" step="0.01" name="sueldo" required>
+    <br><br>
+    <input type="submit" value="calcular">
+    <input type="reset" value="Limpiar">
+</form>
+
+</body>
+</html>

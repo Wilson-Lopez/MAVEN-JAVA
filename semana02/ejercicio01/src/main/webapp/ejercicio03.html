@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUELDO DEL TRABAJADOR</title>
+</head>
+<body>
+<h2>Sueldo a Cobrar</h2>
+<form method="post" action="ejercicio03.jsp">
+    <label for="prenda">Tipos de Prenda</label>
+    <select name="prenda" id="prenda" required>
+        <option value="" disabled selected> Selecione </option>
+        <option value="polo">polos</option>
+        <option value="camisa">Camisas</option>
+        <option value="pantalon">Pantalones</option>
+    </select>
+    <br><br>
+    <label for="categoria">Categoria</label>
+    <select name="categoria" id="categoria" required>
+        <option value="">Selecione</option>
+        <option value="A">Categoria A </option>
+        <option value="B">Categoria B </option>
+        <option value="C">Categoria C </option>
+        <option value="D">Categoria D </option>
+    </select>
+    <br><br>
+    <label for="cantidad">Cantidad de prendad confecionadas</label>
+    <input type="number" name="cantidad" id="cantidad" min="0" required>
+    <br><br>
+    <button type="submit">Calcular sueldo</button>
+    <button type="reset">Borrar</button>
+</form>
+
+</body>
+</html>
